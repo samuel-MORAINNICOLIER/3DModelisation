@@ -1,3 +1,8 @@
+"""
+Programme de test générale du projet.
+Ici le test vise la bonne modélisation du cube 3D.
+"""
+
 import pygame
 from _3D.Plan import Plan
 from _3D.Point import Point
@@ -5,7 +10,7 @@ from _3D.Segment import Segment
 from _3D.Square import Square
 from _3D.Cube import Cube
 
-# Initialisation des paramètres de la fenêtre
+# Initialisation des paramètres de la fenêtre ----------------
 WIDTH = 800
 HEIGHT = 800
 DEPTH = 8000
@@ -17,15 +22,11 @@ clock = pygame.time.Clock()
 FPS = 60
 play = True
 
-# Initialisation des objets 3D
+# Initialisation des objets 3D--------------------------------
 plan1 = Plan(WIDTH, HEIGHT, DEPTH, 90, False)
 
-pointCentre = Point(plan1, 0, 0, 10)
-point2 = Point(plan1, 0, 0, 10)
-temoin = Point(plan1, 200,0,10)
-
-#square1 = Square(Point(plan1, 0,0,0), 200)
 cube1 = Cube(Point(plan1, 0,0,0),100)
+pointCentre = Point(plan1, 0, 0, 10)
 
 is1Pres = False # x
 is2Pres = False # y
@@ -33,7 +34,7 @@ is3Pres = False # z
 while play :
     clock.tick(FPS)
 
-    # Gérer les événements :
+    # Gérer les événements ----------------------------------
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             play = False
@@ -54,7 +55,7 @@ while play :
             if event.key == pygame.K_3:
                 is3Pres = False
 
-    # Contrôle des touches
+    # Contrôle des touches ---------------------------------
     if is1Pres :
         cube1.rotateSelf('x', 1)
     if is2Pres :
@@ -62,23 +63,26 @@ while play :
     if is3Pres :
         cube1.rotateSelf('z', 1)
 
-    #print('p1 : ', point2.getCoord3D())
-    #print('s1 : ', square1.getCoord3D(), '|----| p1 : ', point2.getCoord3D())
-
-    # Effacer la surface
+    # Effacer la surface -----------------------------------
     screen.fill(background_color)
 
-    # Afficher les objets
-    #point2.pygameDraw(screen, "blue")
-    #temoinS1.pygameDrawEdges(screen, "black")
+    # Afficher les objets ----------------------------------
+
+    # Afficher les arêtes du cube
     cube1.pygameDrawEdges(screen, 'black')
-    pointCentre.pygameDraw(screen)
 
+    # Afficher le centre de l'écran
+    # pointCentre.pygameDraw(screen)
+
+    # Afficher le centre du cube
     cube1.getCenter().pygameDraw(screen, 'purple')
-    #for face in cube1.getPolygons():
-        #face.getCenter().pygameDraw(screen)
 
+    # Afficher les centres des faces
+    #for face in cube1.getPolygons():
+    #    face.getCenter().pygameDraw(screen)
+
+    # Informations -----------------------------------------
     print(cube1.getRotation())
 
-    # Basculer le buffer screen sur l'écran
+    # Basculer le buffer screen sur l'écran ----------------
     pygame.display.flip()

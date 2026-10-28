@@ -63,13 +63,13 @@ class Polyedre :
 
     # Gestion de l'affichage ----------------------------------
 
-    def getVisibilityFacesOrthopedic(self):
+    #def getVisibilityFacesOrthopedic(self):
         """
         Indique si chaque face du polyèdre est visible ou non, dans le cadre du polyèdre uniquement.
         (Ne prends pas en charge les autres modèles du plan 3D)
         :return: Un dictionnaire avec les faces en attribut et un booléen en attribut.
         """
-        for face in self.getPolygons():
+        #for face in self.getPolygons():
 
 
 

@@ -1,5 +1,5 @@
 """
-programme rapide et à part du projet
+Programme rapide et à part du projet
 pour tester une formule de rotation en 2D
 """
 

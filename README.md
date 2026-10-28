@@ -16,6 +16,17 @@
   Le projet est codé en Python, Programmation Orientée Objet.</BR>
 </p>
 
+## Installation du projet
+<p>
+   > git clone https://github.com/samuel-MORAINNICOLIER/3DModelisation.git </BR>
+   > cd 3DModelisation
+</p>
+
+## Lancer le projet
+<p>
+   Se rendre dans le répertoire Test3D et lancer le fichier Test.py ( /Test3D/Test.py)
+</p>
+
 ## Dépendances
 ### Pygame
 > Possède la license LGPL 
