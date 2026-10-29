@@ -75,7 +75,7 @@ while play :
     # pointCentre.pygameDraw(screen)
 
     # Afficher le centre du cube
-    cube1.getCenter().pygameDraw(screen, 'purple')
+    # cube1.getCenter().pygameDraw(screen, 'purple')
 
     # Afficher les centres des faces
     #for face in cube1.getPolygons():

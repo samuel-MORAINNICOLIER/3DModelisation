@@ -24,7 +24,13 @@
 
 ## Lancer le projet
 <p>
-   Se rendre dans le répertoire Test3D et lancer le fichier Test.py ( /Test3D/Test.py)
+   Se rendre dans le répertoire Test3D et lancer le fichier Test.py (/Test3D/Test.py)
+</p>
+
+## Commandes
+<p>
+   Faire tourner le cube avec les touches 1, 2 et 3 du clavier, pas le pavé numérique, 
+   pour faire tourner respectivement .
 </p>
 
 ## Dépendances
