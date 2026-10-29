@@ -3,11 +3,7 @@
 ## Auteur
 ### Samuel MORAIN-NICOLIER
   
-> Adresse mail professionnelle actuelle  : samuel.morain-nicolier@etudiant.univ-reims.fr
-  
 > Github : https://github.com/samuel-MORAINNICOLIER
-  
-> Linkedin : https://www.linkedin.com/in/samuel-morain-nicolier-a8a71b3bb
 
 ## Description
 <p>
@@ -17,10 +13,11 @@
 </p>
 
 ## Installation du projet
-<p>
-   > git clone https://github.com/samuel-MORAINNICOLIER/3DModelisation.git </BR>
-   > cd 3DModelisation
-</p>
+   > Avoir Python et Pygame d'installé sur son pc ou son environnement </BR>
+   > Python : https://www.python.org/downloads/ </BR>
+   > Pygame : https://pypi.org/project/pygame/ </BR>
+   > \> git clone https://github.com/samuel-MORAINNICOLIER/3DModelisation.git </BR>
+   > \> cd 3DModelisation </BR>
 
 ## Lancer le projet
 <p>
@@ -30,7 +27,7 @@
 ## Commandes
 <p>
    Faire tourner le cube avec les touches 1, 2 et 3 du clavier, pas le pavé numérique, 
-   pour faire tourner respectivement .
+   pour, respectivement, les axes x, y et z.
 </p>
 
 ## Dépendances
